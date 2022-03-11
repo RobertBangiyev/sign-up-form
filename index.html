@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <!-- <img src="./img/river.jpg" alt="river"> -->
+            <div class="logo">
+                <h1>John's Boating</h1>
+                <img src="./img/rowing_white_24dp.svg" alt="logo">
+            </div>
+            <div class="attestation">
+                <p>Photo by <a href="https://unsplash.com/@mriovisual">Mario Álvarez</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+            </div>
+        </div>
+        <div class="right-side">
+            <div>
+                <p>Sign up to John's Boating and secure a spot at the annual boating race through the Lebron River! This chance will only come once this year, so don't miss out and regret it for the next 364 days</p>
+                <p>Sign up <em>now</em>, and be ready for the boat race you've been waiting for</p>
+            </div>
+            <div>
+                <p>Let's get started!</p>
+                <form action="">
+                    <fieldset>
+                        <label for="name">
+                            FIRST NAME
+                            <input id="name" type="text" required>
+                        </label>
+                        <label for="lastname">
+                            LAST NAME
+                            <input id="lastname" type="text" required>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="email">
+                            EMAIL
+                            <input id="email" type="email" required>
+                        </label>
+                        <label for="phone">
+                            PHONE NUMBER
+                            <input id="phone" type="tel" required pattern="\d{10}|\d{11}" maxlength="11">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="password">
+                            PASSWORD
+                            <input id="password" type="password" required>
+                        </label>
+                        <label for="password-confirm">
+                            CONFIRM PASSWORD
+                            <input id="password-confirm" type="password" required>
+                        </label>
+                    </fieldset>
+                    <button>Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
